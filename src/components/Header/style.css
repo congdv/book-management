@@ -1,0 +1,51 @@
+.header {
+  top: 10px;
+  position: fixed;
+  right: 50px;
+  z-index: 999;
+}
+
+input.search {
+  padding: 6px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: var(--fz-lg);
+  z-index: 100;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  width: 100%;
+  float: right;
+  transition: width 2s;
+  border: 0;
+}
+input.search:focus {
+  width: 150%;
+}
+input.search:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+  transform: translate3D(0, -2px, 0);
+}
+
+.tools {
+  margin-top: 10px;
+}
+.add {
+  background-color: var(--lightest);
+  color: #fff;
+  border-radius: 8px;
+  padding: 5px 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  float: right;
+  transition: all 0.2s linear;
+  color: #000;
+}
+button.add:hover {
+  background-color: var(--light);
+  transform: translate3D(0, -2px, 0);
+}
+.add span {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  padding: 5px;
+}
